@@ -89,3 +89,8 @@ SELECT * FROM employees;
 ## Deleting the data from the database
 DELETE FROM employees WHERE employee_id = 1;
 SELECT * FROM employees;
+
+-- selecting ithe database
+USE myDB;
+SELECT * FROM employees WHERE salary != 1800000 AND salary != 1300000;
+SELECT first_name,last_name,age,gender FROM employees WHERE salary != 1800000 OR salary != 1300000;
