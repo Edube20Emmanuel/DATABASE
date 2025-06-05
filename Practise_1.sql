@@ -94,3 +94,8 @@ SELECT * FROM employees;
 USE myDB;
 SELECT * FROM employees WHERE salary != 1800000 AND salary != 1300000;
 SELECT first_name,last_name,age,gender FROM employees WHERE salary != 1800000 OR salary != 1300000;
+
+-- Adding a new row
+use myDB;
+SELECT * FROM employees;
+INSERT INTO employees values(7,'Kixa','Angella','Female',20,'Married','Network Designer',2000000)
