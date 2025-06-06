@@ -98,4 +98,11 @@ SELECT first_name,last_name,age,gender FROM employees WHERE salary != 1800000 OR
 -- Adding a new row
 use myDB;
 SELECT * FROM employees;
-INSERT INTO employees values(7,'Kixa','Angella','Female',20,'Married','Network Designer',2000000)
+INSERT INTO employees values(7,'Kixa','Angella','Female',20,'Married','Network Designer',2000000);
+
+-- Adding a row into the data base 
+USE myDB;
+SELECT * FROM employees;
+INSERT INTO employees values 
+	(8,'Kissa','Emmanuel','Male',22,'single','System Admin',1200000);
+select * from employees;
