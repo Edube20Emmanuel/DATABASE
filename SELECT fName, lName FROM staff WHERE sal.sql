@@ -1,11 +1,11 @@
 SELECT fName, lName FROM staff WHERE salary > 10000;
 SELECT type FROM propertyforrent WHERE city = 'Glasgow' AND postcode = 'G12';
 SELECT street,postcode FROM branch WHERE city IN ('London','Glasgow');
-SELECT fName,lName FROM staff WHERE salary NOT BETWEEN 20000 AND 50000;
+SELECT fName,lName FROM staff WHERE salary NOT BETWEEN 20000 AND 50000 ORDER BY salary DESC;
 SELECT SUM(salary) AS TotalSalary FROM staff;
 SELECT position,COUNT(*) FROM staff GROUP BY position;
 SELECT * FROM staff;
 SELECT * FROM privateowner;
 SELECT fName, lName FROM privateowner WHERE password IS NULL;
-SELECT COUNT(*) AS NumberOfStaff, SUM(salary) AS TotalSalaries FROM staff;
+SELECT branchNo, COUNT(*) AS NumberOfStaff, SUM(salary) AS TotalSalaries FROM staff GROUP BY branchNo;
 SELECT * FROM branch;
